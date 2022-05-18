@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mohit Saini - Portfolio</title>
+    <link rel="shortcut icon" href="images/Digital%20Dots%20Logo.png" alt="favion" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--    js animation link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+
+<body onload="fun();">
+    <div id="loader">
+        <img src="images/loader.gif">
+    </div>
+    <header id="home">
+
+        <nav id="hamnav">
+            <div id="logo">
+                <img src='images/logo.png'>
+            </div>
+            <!-- [THE HAMBURGER] -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+
+            <!-- [MENU ITEMS] -->
+            <div id="hamitems">
+                <a href="#left">Home</a>
+                <a href="#about">About</a>
+                <a href="#serv">Service</a>
+                <a href="#port">Portfolio </a>
+                <a href="#client"> Contact</a>
+            </div>
+        </nav>
+
+    </header>
+    <section class="main">
+        <div id="left" data-aos="fade-up-left">
+            <h3 class="stroke">Mohit Saini</h3>
+            <h3>New Zealand</h3>
+            <span data-aos="fill-left">Network Engineer </span>
+        </div>
+        <div id="pic">
+
+        </div>
+    </section>
+    <section class="about" id="about">
+
+        <div class="about_l" data-aos="fade-left">
+            <img src="images/me.jpeg" height="430px" width="80%" />
+        </div>
+
+        <div class="about_r" data-aos="fade-right">
+
+            <h2 style="position: relative;font-size: 50px;color:
+            #363636;" data-aos="slide-right" data-aos-duration="0.200">Hi Hire Me<span>ABOUT</span>
+            </h2>
+            <p>A creative person</p>
+            <hr />
+            <p style="padding-top: 30px;">My name is Mohit Saini. I'm very passionate and dedicated to my work.</p>
+            <p>I am a positive, energetic, hardworking, and enthusiastic person and
+            able to build strong relationship with my clients. I can communicate
+            with all kinds of people, in all walks of life and I enjoy communicating
+            and learning from their experience. Being an active listener, I ensure to
+            follow the instructions accurately, maximizing the effectiveness,
+            efficiency, and profitability. Reliability, trust worthiness makes me
+            professional employer, and willing to work as a key player in challenging
+            and creative environment.
+            </p>
+            <button>Contact Me</button>
+        </div>
+
+    </section>
+    <section class="service" id="serv">
+
+        <div class="serve" data-aos="fade-left" style="margin-top: 20px;">
+            <h2 class="sub-heading">Active Directory</h2>
+            <p>Active Directory includes all the visual elements associated with your brand and even your social media graphics. </p>
+
+        </div>
+        <div class="serve" data-aos="fade-up">
+            <h2 class="sub-heading2">CCNA</h2>
+            <p>Have knowledge and practical
+            experience of CCNA
+            </p>
+        </div>
+        <div class="serve" data-aos="fade-right">
+            <h2 class="sub-heading3">Azure Softwere</h2>
+            <p>In addition to graphic, I have knowledge, techniques, and strategies of doing code and create your vision. </p>
+
+        </div>
+
+    </section>
+    <section class="portfolio" id="port" data-aos="fade-down">
+        <div id="work2">
+            <h2 style="position: relative;font-size: 50px;color:white">Featured Work<span>PORTFOLIO</span></h2>
+            <div class="serve2" data-aos="fade-up-left">
+                <img src="images/Restaurent.jpg">
+                <a href="Restaurent_page/app.html">
+                    <h2>Restaurent App</h2>
+                </a>
+                <p></p>
+
+            </div>
+            <div class="serve2" data-aos="slide-up">
+                <img src="images/infographic.jpg">
+                <a href="Infographic_Featurette/infographic%20(1).html">
+                    <h2>Inforgrahic video</h2>
+                </a>
+                <p></p>
+
+            </div>
+            <div class="serve2" data-aos="fade-up-right">
+                <img src="images/retail.jpg">
+                <a href="Retail_Installation/app.html">
+                    <h2>Retail Installation</h2>
+                </a>
+                <p></p>
+
+            </div>
+        </div>
+        
+    </section>
+    <section class="client" id="client">
+
+        <h2 style="position: relative;font-size: 50px;color:#363636" data-aos="fade-left">GET IN TOUCH<span>CONTACT</span>
+        </h2>
+        <div class="client_r" data-aos="fade-up-left">
+            <p>
+                Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
+            <form id="form" method="POST" action="sendemail.php" onsubmit="return fun()">
+                <div class="n4">
+                    <input id="name" type="text" name="Name" placeholder="Enter Your Name">
+                </div>
+
+                <div class="n4">
+
+                    <input type="text" name="Subject" placeholder="Subject" required="">
+                </div>
+                <div class="n4">
+
+                    <textarea name="Message" rows="7" cols="10" maxlength="70"></textarea>
+                </div>
+                <button>Send</button>
+            </form>
+        </div>
+        <div class="client_l">
+            <div class="mapouter" data-aos="fade-up-right">
+                <h2>Social Links</h2>
+                <a href="https://www.linkedin.com/in/mohit-saini-0109a31a7/"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/mohit-saini-0109a31a7/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.linkedin.com/in/mohit-saini-0109a31a7/"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohit-saini-0109a31a7/"> <i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="text-align:center">@copyright 2021. Designed By Mohit Saini</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000,
+        });
+
+        function fun() {
+            document.getElementById('loader').style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
